@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(44, 0%, 49%);
+    font-family: 'Lato', sans-serif;
+    cursor: default;
+    color: #ffffff;
+}
+
+:root {
+    --calc-btn-color: #525252;
+    --background-color: #636363;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.calculator {
+    max-width: 350px;
+    height: 400px;
+    background-color: var(--background-color);
+    padding: 5px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #707070;
+    border: 1px solid #505050;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.name {
+    width: 100%;
+    height: 20px;
+    font-family: 'Akronim', cursive;
+    font-size: 30px;
+}
+
+.result {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.result input {
+    width: 100%;
+    height: 100%;
+    font-size: 42px;
+    text-align: right;
+    outline: none;
+    background-color: #333333;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    padding: 5px;
+    box-shadow: 0px 0px 20px black inset;
+}
+
+.result input.off {
+    box-shadow: none;
+}
+
+.memory {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.buttons {
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttons .row {
+    width: 100%;
+    height: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons .row .btn {
+    height: 70%;
+    width: 60px;
+    border-radius: 5px;
+    background-color: var(--calc-btn-color);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    outline-style: solid;
+    outline-width: 0px;
+    outline-color: var(--background-color);
+}
+
+.buttons .row .btn:hover,
+.buttons .row .btn:focus {
+    box-shadow: 0px 0px 5px var(--calc-btn-color);
+    outline-width: 3px;
+    outline-offset: -5px;
+}
+
+.doublebtn {
+    height: 93px !important;
+    transform: translateY(27px);
+}
+
+.rnd {
+    border-radius: 50% !important;
+}
+
+.onoff {
+    --calc-btn-color: #ff5e00;
+    z-index: 5;
+}
+
+.num {
+    --calc-btn-color: #8d8d8d;
+}
+
+.overlay {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gray {
+    filter: grayscale(1);
+}

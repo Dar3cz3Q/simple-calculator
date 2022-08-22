@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="PL">
+    <head>
+        <title>Kalkulator</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css" type="text/css">
+        <link rel="stylesheet" href="css/fontello.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-33QV98JHCN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-33QV98JHCN');
+        </script>
+    </head>
+    <body>
+        <div class="container flex">
+            <div class="calculator flex">
+                <div class="overlay"></div>
+                <div class="name">
+                    <span>Kalkulator</span>
+                </div>
+                <div class="result">
+                    <input type="text" id="workbench" disabled>
+                    <div class="memory flex"></div>
+                </div>
+                <div class="buttons flex">
+                    <div class="row flex">
+                        <div class="btn rnd flex" data-value="MRC" data-work="function">MRC</div>
+                        <div class="btn rnd flex" data-value="MNEG" data-work="function">M-</div>
+                        <div class="btn rnd flex" data-value="M" data-work="function">M+</div>
+                        <div class="btn flex" data-value="CE" data-work="function">CE</div>
+                        <div class="btn onoff flex" data-value="ONOFF" data-work="function">ON/C</div>
+                    </div>
+                    <div class="row flex">
+                        <div class="btn num flex" data-value="7" data-work="number">7</div>
+                        <div class="btn num flex" data-value="8" data-work="number">8</div>
+                        <div class="btn num flex" data-value="9" data-work="number">9</div>
+                        <div class="btn flex" data-value="%" data-work="operator"><i class="icon-percent"></i></div>
+                        <div class="btn flex" data-value="SQRT" data-work="function">&#8730;</div>
+                    </div>
+                    <div class="row flex">
+                        <div class="btn num flex" data-value="4" data-work="number">4</div>
+                        <div class="btn num flex" data-value="5" data-work="number">5</div>
+                        <div class="btn num flex" data-value="6" data-work="number">6</div>
+                        <div class="btn flex" data-value="NEG" data-work="function">+/-</div>
+                        <div class="btn flex" data-value="/" data-work="operator">/</div>
+                    </div>
+                    <div class="row flex">
+                        <div class="btn num flex" data-value="1" data-work="number">1</div>
+                        <div class="btn num flex" data-value="2" data-work="number">2</div>
+                        <div class="btn num flex" data-value="3" data-work="number">3</div>
+                        <div class="btn doublebtn flex" data-value="+" data-work="operator"><i class="icon-plus"></i></div>
+                        <div class="btn flex" data-value="*" data-work="operator"><i class="icon-cancel-1"></i></div>
+                    </div>
+                    <div class="row flex">
+                        <div class="btn num flex" data-value="0" data-work="number">0</div>
+                        <div class="btn num flex" data-value="." data-work="operator">.</div>
+                        <div class="btn num flex" data-value="RES" data-work="function" style="margin-right: 65px"><i class="icon-eq"></i></div>
+                        <div class="btn flex" data-value="-" data-work="operator"><i class="icon-minus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
